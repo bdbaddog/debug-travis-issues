@@ -36,4 +36,12 @@ else
         tar xzf rel-3.0.12.tar.gz
         cd swig-rel-3.0.12 && ./autogen.sh && ./configure --prefix=/usr && make && sudo make install && cd ..
     fi
+
+    # setup clang for clang tests using local clang installation
+    sudo ln -s /usr/local/clang-5.0.0/bin/clang /usr/bin/clang
+    sudo ln -s /usr/local/clang-5.0.0/bin/clang++ /usr/bin/clang++
+
+    ls -l /usr/local/clang-5.0.0/bin/
+    ls -l /usr/bin/clan*
+
 fi
