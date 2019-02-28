@@ -44,4 +44,6 @@ else
     ls -l /usr/local/clang-5.0.0/bin/
     ls -l /usr/bin/clan*
 
+    ls -l /usr/bin/dvi*
+
 fi

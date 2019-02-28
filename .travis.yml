@@ -1,4 +1,4 @@
-dist: trusty
+dist: xenial
 language: python
 
 # pypy is not passing, but allow failures for coverage stage to be reached
@@ -22,7 +22,7 @@ jobs:
       python: 3.5
       sudo: required
     - <<: *test_job
-      python: 3.7-dev
+      python: 3.7
       sudo: required
 
 install:
